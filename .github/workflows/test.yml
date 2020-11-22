@@ -30,7 +30,7 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install dependencies
-        run: pip install faker unittest
+        run: pip install faker
 
       - name: Test
         run: python -m unittest ./tests.py
