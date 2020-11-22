@@ -33,4 +33,4 @@ jobs:
         run: pip install faker
 
       - name: Test
-        run: python -m unittest ./tests.py
+        run: python -m unittest tests
