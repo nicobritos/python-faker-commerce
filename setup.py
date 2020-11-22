@@ -13,7 +13,7 @@ except FileNotFoundError:
     )
 
 setuptools.setup(
-    name="faker-microservice",
+    name="faker-commerce",
     version="1.0.0",
     author="Nicolas Ignacio Britos",
     author_email="nicbritos@hotmail.com",

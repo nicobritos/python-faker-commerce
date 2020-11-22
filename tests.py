@@ -1,4 +1,4 @@
-"""Tests for faker-microservice."""
+"""Tests for faker-commerce."""
 
 import unittest
 
