@@ -117,5 +117,6 @@ class Provider(faker.providers.BaseProvider):
     def ecommerce_category(self):
         return self.random_element(CATEGORIES)
 
-    def ecommerce_price(self):
-        return self.random_int(min=100, max=99999999) / 100
+    def ecommerce_price(self, as_int: bool = True):
+        n = self.random_int(min=100, max=99999999)
+        return round(n, 2) if as_int else n / 100
