@@ -47,12 +47,19 @@ class EcommerceProviderTestCase(unittest.TestCase):
                 if isinstance(attr, list):
                     self.assertEqual(len(attr), len(set(attr)))
 
-    def test_price(self):
+    def test_price_float(self):
         """Test lists in root of module don't contain duplicates."""
-        result = self.provider.ecommerce_price()
+        result = self.provider.ecommerce_price(False)
         self.assertIsInstance(result, float)
         self.assertGreaterEqual(result, 1)
         self.assertLessEqual(result, 999999.99)
+
+    def test_price_int(self):
+        """Test lists in root of module don't contain duplicates."""
+        result = self.provider.ecommerce_price()
+        self.assertIsInstance(result, int)
+        self.assertGreaterEqual(result, 100)
+        self.assertLessEqual(result, 99999999)
 
     def test_category(self):
         """Test lists in root of module don't contain duplicates."""
