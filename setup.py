@@ -14,7 +14,7 @@ except FileNotFoundError:
 
 setuptools.setup(
     name="faker-commerce",
-    version="1.0.2",
+    version="1.0.3",
     author="Nicolas Ignacio Britos",
     author_email="nicbritos@hotmail.com",
     description="Provider for Faker which adds fake commerce product names, prices, categories and descriptions.",
