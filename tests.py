@@ -26,7 +26,7 @@ class IntegrationTestCase(unittest.TestCase):
         self.assertGreater(len(result), 1)
 
         """Test integration with Faker."""
-        result = self.fake.ecommerce_price()
+        result = self.fake.ecommerce_price(False)
         self.assertIsInstance(result, float)
         self.assertGreaterEqual(result, 1)
         self.assertLessEqual(result, 999999.99)
